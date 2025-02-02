@@ -1,0 +1,338 @@
+/* Reset de margens e preenchimentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1661956602139-ec64991b8b16?q=80&w=1565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  pointer-events: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+  
+}
+header {
+  position: relative;
+  display: flex;
+  background-color: #00ff7f; /* Cor de fundo da faixa */
+  border-bottom: 2px solid #d8c1f1; /* Borda inferior branca */
+  color: #2f4f4f; /* Cor do texto dentro da faixa */
+  align-items: center;
+  justify-content: space-between; /*alinha itens no header comm espaço entre eles*/
+  text-align: center; /*centraliza o texto*/
+  width: 100%; /* Largura total */
+  height: 130px; /*altura do header*/
+  padding: 10px 20px; /*esapçamento interno*/
+}
+/* Estilos para o contêiner principal */
+.profile {
+  display: flex;
+  gap: 10px;
+  align-items: center; /*alinha os itens no topo*/
+  text-shadow: 2px 1px #d8c1f1; /*sombra no texto*/
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.profile img {
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 5px #91ba71;
+  border: 3px solid #71ba91;
+  flex-shrink: 0; /*impede que a imagem incolha*/
+}
+.profile h3 {
+  font-size: 18px;
+}
+.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Estilos para a nav */
+.nav-container{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 10px; /* Espaçamento entre a imagem e o texto */
+}
+.nav-img {
+  width: 180px;
+  height: 180px;
+  border: 3px solid rgb(122, 125, 122);
+  border-radius: 100%; /* Transforma o contêiner em um círculo */
+}
+.nav-text {
+  max-width: 300px;
+  color: #d8c1f1;
+  font-size: 18px;
+  font-weight: bold;font-style: italic;
+}
+
+/* Estilos para o conteúdo principal */
+
+.submit-button {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  
+}
+.submit {
+  width: 90px;
+  height: 90px;
+  border: none; /* Remove a borda do botão */
+  border-radius: 30%; /* Adiciona bordas arredondadas ao botão */
+  font-weight: 500;
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+  outline: none;
+  font-size: 14px; /* Define o tamanho da fonte do botão */
+  transition: background-color 0.3s; /* Adiciona uma transição suave à cor de fundo do botão */
+  background-color: transparent; /* Remove a cor de fundo para tornar o link clicável */
+}
+
+.button-1 {
+  background-color: #9171ba;
+}
+
+.button-2 {
+  background-color: #71ba91;
+}
+.button-3 {
+  background-color: #91ba71;
+}
+.button-4 {
+  background-color: #ba9171;
+}
+.submit a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+/* Adicione espaço entre os botões */
+.submit-button button + button {
+  margin-top: 10px;
+}
+.submit:hover {
+  background-color: #d8c1f1;
+}
+
+/* Estilos para a seção de serviços */
+main {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.services {
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Fundo branco semitransparente */
+  width: 45%;
+  margin: 20px; /* Espaçamento acima e abaixo da seção */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+}
+.services img {
+  width: 85%;
+  height: 100%;
+  margin: 40px;
+}
+.services h2 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.text {
+  padding: 5px;
+}
+
+.text h3 {
+  color: #2f4f4f;
+  font-size: 16px;
+  font-weight: 600;
+  
+}
+.text p {
+  color: #555555;
+  font-size: 14px;
+}
+
+/* Estilos para a seção do blog */
+
+.blog-highlight {
+  background-color: rgba(194, 139, 139, 0.5);
+  padding: 30px;
+  width: 20%;
+  height: 10%;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(168, 241, 174, 0.2); /* Sombra mais pronunciada */
+  margin-top: 30px;
+  margin-right: 20%;
+}
+
+.blog-highlight h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #2f4f4f;
+  font-weight: 600;
+}
+
+.blog-highlight p {
+  color: #181818;
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.submit-button-blog {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 45px;
+  background-color: #71ba91; /* Cor de fundo padrão */
+  color: #fff; /* Cor do texto */
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s; /* Transições suaves para a cor de fundo e texto */
+}
+
+.submit-button-blog a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.submit-button-blog:hover {
+  background-color: #9e1e97;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Altera o fluxo dos itens para uma coluna */
+  align-items: center; /* Centraliza os itens na horizontal */
+  margin-top: 10px; /* Adiciona margem superior para afastar do conteúdo principal */
+}
+
+.footer .social-icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adiciona um espaço entre as imagens e o h5 */
+}
+.footer .social-icons a {
+  margin-right: 60px;
+}
+.footer h5 {
+  color: #fff;
+  margin-top: 10px; /* Adiciona um espaço acima do h5 */
+}
+
+
+  /* Media Query para telas menores */
+@media (max-width: 768px) {/* Oculta os botões de navegação em telas menores */
+  body {
+    font: 14px;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .profile img {
+    margin: 2px;
+    height: 70px;
+    width: 70px;
+    
+  }
+  .profile h3 {
+    font-size: 16px;
+    
+  }
+  
+  .submit-button {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 10px; /* Ajuste para ficar abaixo do header */
+    right: 5px;
+    padding: 5px;
+    border-radius: 8px;
+
+  }
+
+  /* Exibe o menu quando ativo */
+  .submit-button.active {
+    display: flex;
+  }
+  
+  /* Exibe o botão de hambúrguer */
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Estilização dos botões no menu */
+  .submit {
+    width: 80px;
+    height: 35px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+
+  .submit:hover {
+    background-color: #ddd;
+  }
+
+  /* Estilos para a seção do blog */
+
+.blog-highlight {
+  width: 40%;
+}
+
+.blog-highlight h2 {
+  font-size: 18px;
+  color: #afd84f;
+  font-weight: 500;
+}
+
+.blog-highlight p {
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}
+
+.submit-button-blog {
+  width: 90px;
+  height: 45px;
+  background-color: #3e4240; /* Cor de fundo padrão */
+  font-size: 12px;
+}
+
+}
+
+

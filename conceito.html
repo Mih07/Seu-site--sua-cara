@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/conceito.css " />
+    <script src="src/hamburger.js"></script>
+    <title>Meu Blog</title>
+  </head>
+  <body>
+    <header>
+      <div class="profile">
+        <img src="src/assets/logo front-end.png" width="80" height="80" alt="logo" />
+        <h4>Seu site, sua cara</h4>
+      </div>
+
+      <!--Botão de Envio-->
+      <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+      
+      <div class="submit-button">
+        <button class="submit button-1">
+          <a href="seu-blog.html">Home Blog</a>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="content">
+        <h2>
+          Os conceitos de HTML e CSS são fundamentais para o desenvolvimento
+          web.
+        </h2>
+        <p>
+          <h3>HTML (HyperText Markup Language)</h3> 
+          <br>
+          <br>
+          Estruturação: HTML é a linguagem de marcação usada para estruturar o
+          conteúdo da web. Ele define a estrutura básica de uma página web
+          usando elementos como <div >, < header >, < footer >, < section >,
+          entre outros.
+          <br />
+          <br>
+          Tags: HTML usa tags para criar elementos. Cada tag tem uma função
+          específica, por exemplo, < h1 > para cabeçalhos, < p > para
+          parágrafos, < a > para links, < img > para imagens, e assim por
+          diante.
+          <br />
+          <br>
+          Atributos: Tags HTML podem ter atributos que fornecem informações
+          adicionais sobre o elemento, como: id, class, src, href, entre outros.
+          <br />
+          <br>
+          Semântica: HTML5 introduziu elementos semânticos como: < article >, <
+          nav >, < aside >, e < main >, que ajudam a definir a estrutura e o
+          significado do conteúdo.
+          <br />
+          <br>
+          <h3>CSS (Cascading Style Sheets)</h3>
+          <br />
+          <br>
+          Estilização: CSS é usado para estilizar a aparência de uma página web.
+          Ele define como os elementos HTML devem ser exibidos em termos de
+          layout, cores, fontes, espaçamento, e muito mais.
+          <br />
+          <br>
+          Seletores: CSS utiliza seletores para aplicar estilos a elementos
+          HTML. Seletores podem ser simples por exemplo: h1, .classe, #id ou
+          complexos por exemplo: div > p, a:hover.
+          <br />
+          <br>
+          Propriedades e Valores: Cada regra CSS consiste em uma propriedade
+          como: color, font-size, margin e um valor associado: red, 16px, 10px.
+          <br />
+          <br>
+          Cascading: O conceito de cascata em CSS determina como os estilos são
+          aplicados e resolvidos, especialmente quando há múltiplas regras que
+          se aplicam ao mesmo elemento.
+          <br />
+          <br>
+          Box Model: O modelo de caixa é um conceito fundamental que descreve
+          como os elementos são renderizados na tela, considerando margens,
+          bordas, preenchimento e conteúdo.
+          <br />
+          <br>
+          Layouts Responsivos: CSS permite criar layouts que se adaptam a
+          diferentes tamanhos de tela usando unidades flexíveis, media queries,
+          e frameworks como Bootstrap. Esses conceitos formam a base para criar
+          páginas web bem estruturadas e estilizadas, proporcionando uma boa
+          experiência de usuário.
+        </p>
+      </section>
+      
+      <aside class="text">
+        <h2>Dicas de como estruturar</h2>
+        <br>
+        <br>
+        <h4>Estrutura Semântica - O que é?</h4>
+        <br>
+        <p>As tags semânticas dp HTML ajudam a descrever o propósito do conteúdo dentro de um documento. Elas tornam o código mais legível e ajudam ferramentas de acessibilidade e motores de busca a entenderem melhor o conteúdo.</p>
+
+        <h2>Exemplo de Código HTML</h2>
+        <br>
+        <pre><code>
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang="pt-BR"&gt;
+          &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;Página com Estrutura Semântica&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;header&gt;
+              &lt;h1&gt;Bem-vindo ao Meu Blog&lt;/h1&gt;
+            &lt;/header&gt;
+            &lt;nav&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#sobre"&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contato"&gt;Contato&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/nav&gt;
+            &lt;section&gt;
+              &lt;article&gt;
+                &lt;h2&gt;Título do Artigo&lt;/h2&gt;
+                &lt;p&gt;Este é o conteúdo do artigo...&lt;/p&gt;
+              &lt;/article&gt;
+            &lt;/section&gt;
+            &lt;footer&gt;
+              &lt;p&gt;Copyright © 2024&lt;/p&gt;
+            &lt;/footer&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+        </code></pre>
+        <br>
+        <p>Neste exemplo, usamos  < header >, < nav >, < section >, < article >, e < footer > para criar uma estrutura clara e semântica. </p>
+        <br>
+        <h2>Agora vamos ver em detalhes cada uma dessas tags semânticas:</h2>
+        <br>
+        <h3>< header >
+          O Que é?</h3>
+          <br>
+          <p>
+            A tag < header > é usada para definir um cabeçalho para um documento ou uma seção do documento.
+          </p>
+          <br>
+          <h3>< nav >
+            O Que é?</h3>
+            <br>
+            <p>
+              A tag < nav > é usada para definir um conjunto de links de navegação.
+              Geralmente contém menus de navegação que levam a outras páginas ou seções do site.
+            </p>
+            <br>
+            <h3>< section >
+              O Que é?</h3>
+              <br>
+              <p>
+                A tag < section > é usada para definir seções em um documento, como capítulos, cabeçalhos ou qualquer outro grupo de conteúdo temático.
+                Ajuda a organizar o conteúdo em blocos temáticos, facilitando a leitura e a estruturação do documento.
+              </p>
+              <br>
+              <h3>< article >
+                O Que é?</h3>
+                <br>
+                <p>
+                  A tag < article > é usada para definir conteúdo independente e auto-contido.Ideal para artigos de blog, notícias, postagens de fórum ou qualquer outro conteúdo que possa ser distribuído de forma independente.
+                </p>
+                <br>
+                <h3>< footer >
+                  O Que é?</h3>
+                  <br>
+                  <p>
+                    A tag < footer > é usada para definir um rodapé para um documento ou uma seção do documento.
+                    Normalmente contém informações sobre o autor, direitos autorais, links de contato, e outros dados relacionados ao documento.
+                  </p>
+                  <br>
+      </aside>
+      <div class="extra">
+        <h2>Exemplo de Código CSS</h2>
+        <pre><code>
+  /* styles.css */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    padding: 2rem;
+  }
+  
+  article {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+        </code></pre>
+        <h2>Agora vamos ver em detalhes do CSS</h2>
+        <br>
+        <h4>Neste exemplo, criamos uma página com um layout visualmente agradável e responsivo. Você pode expandir e personalizar o design adicionando estilos, cores, fontes e outras melhorias visuais</h4>
+        <br>
+        <p>
+          Reset Básico: Removemos a margem e o preenchimento padrão de todos os elementos e ajustamos o box-sizing para border-box para facilitar o dimensionamento.
+          <br><br>
+          Body: Definimos a fonte e o line-height para melhorar a legibilidade.
+          <br><br>
+          Header: Estilizamos o cabeçalho com um fundo escuro e texto claro. Centralizamos o texto e adicionamos espaçamento.
+          <br><br>
+          Nav: Estilizamos a navegação para exibir os links horizontalmente no desktop e verticalmente em dispositivos móveis. Adicionamos um efeito hover nos links.
+          <br><br>
+          Section: Adicionamos espaçamento interno e uma borda inferior para separar visualmente cada seção.
+          <br><br>
+          Footer: Estilizamos o rodapé de forma semelhante ao cabeçalho.
+          <br><br>
+          Media Query: Tornamos a navegação responsiva, ajustando o layout para dispositivos com largura máxima de 600px.
+          <br><br>
+        </p>
+
+      </div>
+    </div>
+    
+    <!--Rodapé-->
+    <footer class="footer"></footer>
+    <script src="src/scripts.js"></script>
+
+    <script src="src/blog.js"></script>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #dfcbf1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #00ff7f; /* Cor de fundo da faixa */
+  border-bottom: 2px solid #d8c1f1; /* Borda inferior branca */
+  color: #2f4f4f; /* Cor do texto dentro da faixa */
+  width: 100%; /* Largura total */
+  align-items: 100%;
+}
+
+/* Contêiner principal */
+.main-container {
+  display: flex; /* Define o layout como flexbox */
+  width: 100%; /* Garante que o contêiner ocupe toda a largura */
+}
+
+/* Estilos para a barra lateral */
+.sidebar {
+  flex: 1; /* Permite que a barra lateral ocupe 1 parte da largura do contêiner principal */
+  display: flex;
+  flex-direction: column; /* Altera o fluxo para uma coluna */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  padding: 20px; /* Adiciona um espaço interno */
+  font-style: italic; /* Define o estilo da fonte como cursiva */
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 2; /* Garante que a barra lateral esteja na frente do botão */
+}
+.sidebar .social-icons {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Define a direção dos itens para uma coluna */
+}
+.sidebar .social-icons a {
+  margin-bottom: 30px; /* Adiciona espaço entre os ícones */
+  color: black; /* Cor do texto */
+  font-weight: normal; /* Peso da fonte */
+  transition: color 0.9s; /* Transição suave de cor */
+}
+/* Estilo quando o mouse passa sobre o texto */
+
+.sidebar a:hover {
+  color: #9171ba; /* Nova cor ao passar o mouse */
+  font-weight: bold; /* Texto em negrito */
+}
+/* Estilos para a seção principal */
+section {
+  flex: 1; /* Permite que a seção principal ocupe 1 partes da largura do contêiner principal */
+  padding: 10px;
+}
+
+/* Estilos para o contêiner do formulário */
+
+.formulario {
+  display: flex;
+  flex-direction: column; /* Garante que os elementos do formulário sejam dispostos em uma coluna */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  max-width: 500px; /* Largura máxima do formulário */
+  margin: 20px auto; /* Centraliza o formulário horizontalmente */
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para os títulos */
+.formulario h1 {
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  color: #151516; /* Cor do título */
+}
+
+.formulario label,
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-bottom: 15px; /* Espaçamento inferior */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  box-sizing: border-box; /* Garante que padding e borda não afetem o tamanho total */
+}
+
+/* Estilos para o botão de enviar */
+.formulario input[type="submit"] {
+  background-color: #8a3fda;
+  color: black; /* Cor do texto */
+  padding: 10px 30px; /* Espaçamento interno */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+.formulario input[type="submit"]:hover {
+  background-color: #b287e0;
+}
+
+/* Estilos para o conteúdo principal */
+.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* Certifique-se de que o botão está acima de outros elementos */
+  position: relative;
+  padding: 20px;
+  
+}
+.submit-button {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  
+}
+.submit-button,
+.hamburger-menu {
+  position: relative;
+  z-index: 10;
+}
+.submit {
+  width: 90px;
+  height: 90px;
+  margin: 10px 30px;
+  border: none; /* Remove a borda do botão */
+  border-radius: 30%; /* Adiciona bordas arredondadas ao botão */
+  font-weight: 500;
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+  outline: none;
+  font-size: 14px; /* Define o tamanho da fonte do botão */
+  transition: background-color 0.3s; /* Adiciona uma transição suave à cor de fundo do botão */
+  background-color: transparent; /* Remove a cor de fundo para tornar o link clicável */
+}
+
+.button-1 {
+  background-color: #9171ba;
+}
+
+.button-2 {
+  background-color: #71ba91;
+}
+.button-3 {
+  background-color: #91ba71;
+}
+.button-4 {
+  background-color: #ba9171;
+}
+.submit a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+/* Adicione espaço entre os botões */
+.submit-button button + button {
+  margin-top: 10px;
+}
+.submit:hover {
+  background-color: #d8c1f1;
+}
+
+.h1 {
+  align-items: center;
+}
+
+.footer {
+  background-color: #c69aed;
+  color: black; /* Cor do texto */
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  align-items: center; /* Centraliza os itens na horizontal */
+  bottom: 0; /* Alinha o footer ao final da página */
+  width: 100%; /* Largura total */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+
+/* Estilos para telas pequenas, como dispositivos móveis */
+
+@media only screen and (max-width 480px) {
+  /* Ajuste o layout para telas menores */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-size: 100;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  
+  
+}
+
+/* Media Query para telas menores */
+ @media (max-width: 768px) {/* Oculta os botões de navegação em telas menores */
+    
+  .submit-button {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 5px; /* Ajuste para ficar abaixo do header */
+    right: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    z-index: 999;/* Garante que o menu fique acima de outros elementos */
+
+  }
+
+  /* Exibe o menu quando ativo */
+  .submit-button.active {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  /* Exibe o botão de hambúrguer */
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Estilização dos botões no menu */
+  .submit {
+    width: 80px;
+    height: 35px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+
+ 
+  .submit:hover {
+    background-color: #ddd;
+  }
+  .footer {
+    margin-top: 130px; /* Espaçamento superior */
+  }
+
+
+}

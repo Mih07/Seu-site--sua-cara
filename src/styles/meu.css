@@ -1,0 +1,221 @@
+/* Reset de margens e preenchimentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1661956602139-ec64991b8b16?q=80&w=1565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  pointer-events: auto; /* Permite que os eventos do mouse sejam capturados */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+  background-position: center; /* Centraliza a imagem */
+  width: 100%;
+  height: 100vh; /* Garante que a altura do body cubra toda a viewport */
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: relative;
+  display: flex;
+  background-color: #00ff7f; /* Cor de fundo da faixa */
+  border-bottom: 2px solid #d8c1f1; /* Borda inferior branca */
+  color: #2f4f4f; /* Cor do texto dentro da faixa */
+  align-items: center;
+  justify-content: space-between; /*alinha itens no header comm espaço entre eles*/
+  text-align: center; /*centraliza o texto*/
+  width: 100%; /* Largura total */
+  height: 100px; /*altura do header*/
+  padding: 0 20px; /*esapçamento interno*/
+}
+/* Estilos para o contêiner principal */
+.profile {
+  display: flex;
+  max-width: 300px;
+  align-items: center; /*alinha os itens no topo*/
+  padding: 10px; /* espaço ao redor do conteúdo*/
+  text-shadow: 2px 1px #d8c1f1; /*sombra no texto*/
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.profile img {
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 5px #91ba71;
+  border: 3px solid #71ba91;
+  flex-shrink: 0; /*impede que a imagem incolha*/
+}
+.profile h1 {
+  padding-top: 15px;
+}
+
+.submit-button {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 5px 40px;
+}
+.submit {
+  width: 120px;
+  height: 70px;
+  border: none; /* Remove a borda do botão */
+  border-radius: 10%; /* Adiciona bordas arredondadas ao botão */
+  font-weight: 700;
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+  outline: none;
+  font-size: 16px; /* Define o tamanho da fonte do botão */
+  transition: background-color 0.3s; /* Adiciona uma transição suave à cor de fundo do botão */
+  background-color: transparent; /* Remove a cor de fundo para tornar o link clicável */
+}
+
+.button-1 {
+  background-color: #9171ba;
+}
+
+.submit a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+/* Adicione espaço entre os botões */
+.submit-button button + button {
+  margin-top: 10px;
+}
+.submit:hover {
+  background-color: #d8c1f1;
+}
+section {
+  width: 100%;
+  height: 60vh; /* Garante que o section cubra toda a altura da viewport */
+  background-image: url("https://images.unsplash.com/photo-1556888335-23631cd2801a?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll; /*Fixa a imagem de fundo, fazendo com que ela não se mova quando o usuário rola a página. Isso cria um efeito de paralaxe.*/
+  display: grid;
+  justify-content: center;
+}
+
+.notebook {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  align-items: center;
+}
+
+.notebook h1 {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+.notebook p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 700px;
+  padding: 20px;
+  padding: 10px 0; /* Ajusta o padding superior e inferior */
+  gap: 10px;
+}
+
+/*container flexive que agrupa e centraliza as caixas*/
+.container {
+  display: flex; /* Usa Flexbox para organizar os itens dentro do contêiner */
+  flex-wrap: wrap; /* Permite que os itens se ajustem automaticamente em várias linhas */
+}
+/* Estilo das caixas principais */
+
+/* Estilo das subcaixas que contêm o conteúdo */
+.sub-box {
+  width: 30%;
+  min-height: 20vh;
+  justify-content: center;
+  align-items: center;
+  display: flex; /* Usa Flexbox para organizar o conteúdo dentro da subcaixa */
+  margin: 30px;
+  padding: 30px 60px;
+  background-color: rgba(240, 240, 240, 0.8);
+  /* Define a cor de fundo com transparência */
+  font-size: 18px;
+  text-align: center; /* Centraliza o texto */
+  cursor: pointer; /*mouse*/
+  border-radius: 5px;
+  border: 2px solid #000; /* Adiciona uma borda preta de 2 pixels */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito de transformação */
+}
+
+.sub-box:hover {
+  transform: scale(1.1); /* Aumenta o tamanho da caixa */
+  z-index: 10; /* Traz a caixa para frente */
+  background-color: rgba(
+    193,
+    136,
+    177,
+    0.9
+  ); /* Cor de fundo ao trazer para frente */
+}
+.footer {
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  align-items: center; /* Centraliza os itens na horizontal */
+}
+
+.footer h5 {
+  color: #ffffff;
+  margin-top: 10px; /* Adiciona um espaço acima do h5 */
+}
+
+@media screen and (max-width: 906) {
+  body {
+    background-size: cover; /* Garante que a imagem ainda cubra toda a tela */
+  }
+  .profile h1 {
+    font-size: 12px;
+  }
+  section {
+    height: auto; /* Permite que o section ajuste a altura automaticamente */
+    min-height: 50vh; /* Garante que o section cubra pelo menos a altura da viewport */
+  }
+  .notebook p {
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 5px; /* Reduz a margem superior entre h1 e p */
+  }
+  .notebook h1 {
+    font-size: 1.5em;
+    margin: 20px 0; /* Ajusta a margem superior e inferior do h1 */
+  }
+
+  .notebook {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-size: cover;
+  }
+  .profile h1 {
+    font-size: 15px;
+  }
+
+  section {
+    height: auto;
+    min-height: 50vh;
+  }
+
+  .notebook h1 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+
+  .notebook p {
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+}

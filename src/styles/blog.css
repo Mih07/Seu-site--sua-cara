@@ -1,0 +1,261 @@
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: rgb(227, 233, 238);
+    width: 100%;
+    height: 100vh; /* Garante que a altura do body cubra toda a viewport */
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    position: relative;
+    display: flex;
+    background-color: #00ff7f; /* Cor de fundo da faixa */
+    border-bottom: 2px solid #d8c1f1; /* Borda inferior branca */
+    color: #2f4f4f; /* Cor do texto dentro da faixa */
+    align-items: center;
+    justify-content: space-between; /*alinha itens no header comm espaço entre eles*/
+    text-align: center; /*centraliza o texto*/
+    width: 100%; /* Largura total */
+    height: 100px; /*altura do header*/
+    padding: 0 20px; /*esapçamento interno*/
+  }
+  /* Estilos para o contêiner principal */
+  .profile {
+    display: flex;
+    max-width: 300px;
+    align-items: center; /*alinha os itens no topo*/
+    padding: 10px; /* espaço ao redor do conteúdo*/
+    text-shadow: 2px 1px #d8c1f1; /*sombra no texto*/
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .profile img {
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 4px 5px #91ba71;
+    border: 3px solid #71ba91;
+    flex-shrink: 0; /*impede que a imagem incolha*/
+  }
+  .profile h4 {
+    padding-top: 15px;
+  }
+  
+  .submit-button {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 5px 40px;
+  }
+
+  
+  .hamburger-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000; /* Certifique-se de que o botão está acima de outros elementos */
+    position: relative;
+  }
+  
+  .submit-button,
+  .hamburger-menu {
+    position: relative;
+    z-index: 10;
+  }
+  .submit {
+    width: 90px;
+    height: 90px;
+    border: none; /* Remove a borda do botão */
+    border-radius: 30%; /* Adiciona bordas arredondadas ao botão */
+    font-weight: 500;
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    outline: none;
+    font-size: 14px; /* Define o tamanho da fonte do botão */
+    transition: background-color 0.3s; /* Adiciona uma transição suave à cor de fundo do botão */
+    background-color: transparent; /* Remove a cor de fundo para tornar o link clicável */
+  }
+
+  .button-1 {
+    background-color: #9171ba;
+  }
+  
+  .submit a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  /* Adicione espaço entre os botões */
+  .submit-button button + button {
+    margin-top: 10px;
+  }
+  .submit:hover {
+    background-color: #d8c1f1;
+  }
+  section {
+    width: 100%;
+    height: 60vh; /* Garante que o section cubra toda a altura da viewport */
+    background-color: #d8c1f1;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; /*Fixa a imagem de fundo, fazendo com que ela não se mova quando o usuário rola a página. Isso cria um efeito de paralaxe.*/
+    display: grid;
+    justify-content: center;
+  }
+  
+  .notebook {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .notebook h1 {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  .notebook p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 700px;
+    padding: 20px;
+    padding: 10px 0; /* Ajusta o padding superior e inferior */
+    gap: 10px;
+  }
+
+  .carousel-caption img{
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  
+.carousel-caption h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}
+.carousel-caption h5 {
+  color: black;
+  font-weight: 900;
+  font-size: 26px;
+}
+.carousel-caption h3 {
+  color: black;
+  font-weight: 900;
+  
+}
+.carousel-caption p {
+    color: #02020c;
+    font-weight: 700;
+    font-size: 22px;
+}
+/* Alterar a cor da seta do botão "Próximo" */
+.carousel-control-next-icon {
+    background-color: blue; /* Define a cor da seta */
+    border-radius: 50%;     /* Deixa o fundo arredondado */
+  }
+  /* Alterar a cor da seta do botão "Anterior" */
+  .carousel-control-prev-icon {
+    background-color: red; /* Define a cor da seta */
+    border-radius: 50%;   /* Deixa o fundo arredondado */
+  }
+
+
+  .footer {
+    background-color: #9171ba;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    align-items: center; /* Centraliza os itens na horizontal */
+  }
+  .footer h5 {
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* Media Query para telas menores */
+ @media (max-width: 768px) {/* Oculta os botões de navegação em telas menores */
+    
+  .submit-button {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 5px; /* Ajuste para ficar abaixo do header */
+    right: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    z-index: 999;/* Garante que o menu fique acima de outros elementos */
+
+  }
+
+  /* Exibe o menu quando ativo */
+  .submit-button.active {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  /* Exibe o botão de hambúrguer */
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Estilização dos botões no menu */
+  .submit {
+    width: 80px;
+    height: 35px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+
+ 
+  .submit:hover {
+    background-color: #ddd;
+  }
+
+  .profile img {
+    margin: 2px;
+    height: 70px;
+    width: 70px;
+    
+  }
+
+  section {
+    height: 70%; /* Garante que o section cubra toda a altura da viewport */
+  }
+
+  .carousel-caption h3 {
+    font-size: 20px;
+    color: white;
+  }
+  .carousel-caption p {
+      font-weight: 700;
+      font-size: 18px;
+  }
+
+  .carousel-caption img{
+    height: 40px;
+    width: 40px;
+  }
+  .footer {
+    margin-top: 0;  
+  }
+
+  section {
+    height: 110%; /* Garante que o section cubra toda a altura da viewport */
+  }
+
+
+}

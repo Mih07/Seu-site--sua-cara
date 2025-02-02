@@ -1,0 +1,29 @@
+/* Estilos para telas pequenas, como dispositivos móveis */
+
+@media only screen and (max-width 480px) {
+  /* Ajuste o layout para telas menores */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-size: 100;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  /* Estilos para o rodapé */
+  .footer .social-icons a {
+    margin-right: 20px; /* Reduz o espaçamento entre os ícones */
+  }
+  .footer h5 {
+    margin-top: 0; /* Remove o espaço acima do h5 */
+  }
+}
+
